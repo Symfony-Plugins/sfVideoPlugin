@@ -10,6 +10,15 @@
 class sfVideoActions extends sfActions
 {
   /**
+   * Displays example links to external flv files.
+   *
+   * @param sfRequest $request A request object
+   */
+  public function executeIndex(sfWebRequest $request)
+  {
+  }
+
+  /**
    * Demo action. Displays an example external flv file.
    *
    * @param sfRequest $request A request object

@@ -28,6 +28,19 @@ Usage
 Go to the _config_ directory of the plugin and uncomment all lines in the
 _routing.yml_ file.
 
+Enable the sfVideo module in your application's config/settings.yml
+enabled_modules section:
+
+    [php]
+    enabled_modules: [ ..., sfVideo ]
+
+Run the following URL in your browser:
+
+    http://your-site/video
+
+You may choose from 3 example flv files to display. An example of linking flv
+file is shown in sfVideo/templates/indexSuccess.php.
+
 Documentation
 =============
 

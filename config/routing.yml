@@ -1,7 +1,9 @@
+video:
+  url:   /video
+  param: { module: sfVideo, action: index }
+
 video_local:
   url:   /video/:file
   param: { module: sfVideo, action: local }
-
-video:
-  url:   /video
-  param: { module: sfVideo, action: show }
+  options:
+    segment_separators: ['/'] # disabling '.' separator

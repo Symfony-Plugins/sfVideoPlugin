@@ -7,10 +7,9 @@ body {
 
 #page {
 	background-color:#efefef;
-	width:600px;
+	width:520px;
 	margin:50px auto;
 	padding:20px 150px 20px 50px;
-	min-height:600px;
 	border:2px solid #fff;
 	outline:1px solid #ccc;
 	text-align:left;

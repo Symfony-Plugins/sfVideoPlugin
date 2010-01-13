@@ -32,9 +32,10 @@ class sfVideoActions extends sfActions
    *
    * @param sfRequest $request A request object
    */
-  public function executeShow(sfWebRequest $request)
+  public function executeLocal(sfWebRequest $request)
   {
-    $this->link = "/path/to/local/flv/file.flv";
+    $this->link = $request->getParameter('file');
+echo $this->link;
 
     // adding js flash embedding script
     $this->getResponse()->addJavascript('/sfVideoPlugin/js/flowplayer-3.1.4.min.js');

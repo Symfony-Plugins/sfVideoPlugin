@@ -78,6 +78,15 @@ your browser:
 
     http://your-site/multi-video
 
+Widget
+======
+
+You may use a video widget (__sfVideoWidget__ class) inside your form, e.g. in
+an upload form.
+
+    [php]
+    $form->setOption('url', '/sfVideoPlugin/flv/01.flv');
+
 Configuration
 =============
 

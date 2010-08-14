@@ -10,10 +10,10 @@ class sfVideoWidget extends sfWidgetForm
 {
   public function configure($options = array(), $attributes = array())
   {
-    $this->addOption('player.width', sfConfig::get('app_sfvideo_width'));
-    $this->addOption('player.height', sfConfig::get('app_sfvideo_height'));
-    $this->addOption('player.autoload', sfConfig::get('app_sfvideo_autoload'));
-    $this->addOption('player.autobuffering', sfConfig::get('app_sfvideo_autobuffering'));
+    $this->addOption('player.width', sfConfig::get('app_video_width'));
+    $this->addOption('player.height', sfConfig::get('app_video_height'));
+    $this->addOption('player.autoload', sfConfig::get('app_video_autoload'));
+    $this->addOption('player.autobuffering', sfConfig::get('app_video_autobuffering'));
     $this->addOption('url', '/sfVideoPlugin/flv/01.flv');
     $this->addOption('template.html',
 '<a href="{url}"

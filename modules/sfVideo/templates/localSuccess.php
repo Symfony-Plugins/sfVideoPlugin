@@ -13,17 +13,11 @@
     <!-- this will install flowplayer inside previous A- tag. -->
 
     <script>
-        autoplay = "<?php echo sfConfig::get('app_sfvideo_autoplay') ?>";
-        autobuffering = "<?php echo sfConfig::get('app_sfvideo_autoplay') ?>";
-
-        if (autoplay == "off") {
-          autoplay = false;
-        } else {
-          autoplay = true;
-        }
-
         flowplayer("player", "<?php echo video_path('swf/flowplayer-3.1.5.swf') ?>", {
-          clip: { autoPlay: autoplay, autoBuffering: false }
+          clip: {
+            autoPlay: <?php echo sfConfig::get('app_sfvideo_autoplay') ?>,
+            autoBuffering: <?php echo sfConfig::get('app_sfvideo_autoplay') ?>
+          }
         });
     </script>
 </div>

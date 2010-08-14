@@ -102,6 +102,13 @@ Example configuration reading:
     [php]
     sfConfig::get('app_video_autoplay')
 
+Online demo
+===========
+
+    http://symfony.rox.pl/video
+
+    http://symfony.rox.pl/multi-video
+
 Documentation
 =============
 

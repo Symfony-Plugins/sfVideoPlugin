@@ -10,7 +10,13 @@
   <email>tomasz.ducin@gmail.com</email>
   <active>yes</active>
  </lead>
- <date>2010-01-13</date>
+ <developer>
+  <name>Javier Aguirre</name>
+  <user>javaguirre</user>
+  <email>javaguirre@ufocoders.com</email>
+  <active>yes</active>
+ </developer>
+ <date>2010-08-15</date>
  <time>11:00:00</time>
  <version>
    <release>1.0.0</release>
@@ -27,12 +33,19 @@
    <dir name="/">
 
      <dir name="config">
+       <file name="app.yml" role="data" />
        <file name="routing.yml" role="data" />
      </dir>
 
      <dir name="lib">
+       <dir name="form">
+         <file name="sfVideoForm.class.php" role="data" />
+       </dir>
        <dir name="helper">
          <file name="VideoHelper.php" role="data" />
+       </dir>
+       <dir name="widget">
+         <file name="sfVideoWidget.class.php" role="data" />
        </dir>
      </dir>
 
@@ -42,8 +55,10 @@
            <file name="actions.class.php" role="data" />
          </dir>
          <dir name="templates">
+           <file name="_video.php" role="data" />
            <file name="indexSuccess.php" role="data" />
            <file name="localSuccess.php" role="data" />
+           <file name="multiSuccess.php" role="data" />
          </dir>
        </dir>
      </dir>
@@ -109,6 +124,25 @@
     <license>MIT</license>
     <notes>
      * initial import
+    </notes>
+   </release>
+
+   <release>
+    <version>
+     <release>1.1.0</release>
+     <api>1.0.0</api>
+    </version>
+    <stability>
+     <release>stable</release>
+     <api>stable</api>
+    </stability>
+    <license uri="http://www.symfony-project.org/license">MIT license</license>
+    <date>2010-08-15</date>
+    <license>MIT</license>
+    <notes>
+     * video partial and widget (by javaguirre)
+     * multi player support
+     * docs updated
     </notes>
    </release>
 

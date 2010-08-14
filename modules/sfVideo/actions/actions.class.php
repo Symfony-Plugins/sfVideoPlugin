@@ -30,6 +30,9 @@ class sfVideoActions extends sfActions
       array('file' => '02.flv', 'player' => 'player02'),
       array('file' => '03.flv', 'player' => 'player03'),
     );
+
+    // adding default flowplayer stylesheet
+    $this->getResponse()->addStylesheet('/sfVideoPlugin/css/flowplayer');
   }
 
   /**

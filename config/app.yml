@@ -1,5 +1,5 @@
 all:
   sfvideo_width: 520px
   sfvideo_height: 320px
-  sfvideo_autoplay: on
-  sfvideo_autobuffering: on
+  sfvideo_autoplay: true
+  sfvideo_autobuffering: true

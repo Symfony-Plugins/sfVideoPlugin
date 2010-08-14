@@ -15,15 +15,11 @@ if (!isset($player)) $player = 'player';
     <!-- this will install flowplayer inside previous A- tag. -->
 
     <script>
-        autoplay = "<?php echo sfConfig::get('app_sfvideo_autoplay') ?>";
-        autobuffering = "<?php echo sfConfig::get('app_sfvideo_autoplay') ?>";
-
-        //Configuration
-        autoplay = (autoplay == "on") ? true : false ;
-        autobuffering = (autobuffering == "on") ? true : false;
-
         flowplayer("<?php echo $player ?>", "<?php echo video_path('swf/flowplayer-3.1.5.swf') ?>", {
-          clip: { autoPlay: autoplay, autoBuffering: autobuffering }
+          clip: {
+            autoPlay: <?php echo sfConfig::get('app_sfvideo_autoplay') ?>,
+            autoBuffering: <?php echo sfConfig::get('app_sfvideo_autoplay') ?>
+          }
         });
     </script>
 </div>

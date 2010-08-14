@@ -1,4 +1,11 @@
 <?php
+/**
+ * VideoHelper.
+ *
+ * @package    symfony
+ * @subpackage helper
+ * @author     Tomasz Ducin <tomasz.ducin@gmail.com>
+ */
 
 /**
  * Returns the path to a video asset.

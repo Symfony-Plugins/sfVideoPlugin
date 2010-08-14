@@ -5,7 +5,7 @@ body {
 	text-align:center;
 }
 
-#page {
+.page {
 	background-color:#efefef;
 	width:520px;
 	margin:50px auto;

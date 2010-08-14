@@ -1,2 +1,3 @@
-<?php include_partial('sfVideo/video', array('file' => 'cat.flv', 'player' => 'cat')); ?>
-<?php include_partial('sfVideo/video', array('file' => 'lemur.flv', 'player' => 'lemur')); ?>
+<?php foreach($players as $p): ?>
+<?php include_partial('sfVideo/video', $p) ?>
+<?php endforeach; ?>

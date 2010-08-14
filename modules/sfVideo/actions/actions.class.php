@@ -26,8 +26,9 @@ class sfVideoActions extends sfActions
   public function executeMulti(sfWebRequest $request)
   {
     $this->players = array(
-      array('player' => 'cat.flv'),
-      array('player' => 'lemur.flv'),
+      array('file' => '01.flv', 'player' => 'player01'),
+      array('file' => '02.flv', 'player' => 'player02'),
+      array('file' => '03.flv', 'player' => 'player03'),
     );
   }
 

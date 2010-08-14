@@ -1,6 +1,6 @@
 <?php use_helper('Video') ?>
 
-<div id="page">
+<div class="page">
 
     <h1>sfVideoPlugin example - powered by Flowplayer</h1>
     <p>View commented source code to get familiar with Flowplayer installation.</p>

@@ -5,7 +5,7 @@ include_javascripts();
 if (!isset($player)) $player = 'player';
 ?>
 
-<div>
+<div class="page">
 
     <!-- this A tag is where your Flowplayer will be placed. it can be anywhere -->
     <a href="<?php echo video_path('flv'.'/'.$file) ?>"

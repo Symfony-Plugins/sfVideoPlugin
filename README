@@ -41,6 +41,58 @@ Run the following URL in your browser:
 You may choose from 3 example flv files to display. An example of linking flv
 file is shown in sfVideo/templates/indexSuccess.php.
 
+Video templates
+===============
+
+The plugin is provided with a ready-to-use partial template:
+
+    [php]
+    include_partial('sfVideo/video', array('file' => '01.flv'));
+
+Each flv file is fetched from __web/sfVideoPlugin/flv__ directory.
+
+Multi-video
+===========
+
+You can display as many players as you want on one page if you set different
+_player_ parameter for each of them. Just define an array of players in action
+code:
+
+    [php]
+    $this->players = array(
+      array('file' => '01.flv', 'player' => 'player01'),
+      array('file' => '02.flv', 'player' => 'player02'),
+      array('file' => '03.flv', 'player' => 'player03'),
+    );
+
+JS script managing flowplayer replaces <a> HTML tags with flash players and each
+tag has to have a unique id parameter (_player01_, _player02_, _player03_
+above). Temlate code should be similar to:
+
+    [php]
+    foreach($players as $p)
+      include_partial('sfVideo/video', $p);
+
+The plugin is provided with multi-video action example. Run the following URL in
+your browser:
+
+    http://your-site/multi-video
+
+Configuration
+=============
+
+The file __config/ap.yml__ contains basic flowplayer configuration:
+
+    width: 520px
+    height: 320px
+    autoplay: true
+    autobuffering: true
+
+Example configuration reading:
+
+    [php]
+    sfConfig::get('app_video_autoplay')
+
 Documentation
 =============
 

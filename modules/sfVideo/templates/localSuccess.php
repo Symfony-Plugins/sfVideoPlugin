@@ -7,7 +7,7 @@
 
     <!-- this A tag is where your Flowplayer will be placed. it can be anywhere -->
     <a href="<?php echo video_path('flv'.'/'.$file) ?>"
-       style="display:block;width:<?php echo sfConfig::get('app_sfvideo_width')?>;height:<?php echo sfConfig::get('app_sfvideo_height')?>"
+       style="display:block;width:<?php echo sfConfig::get('app_video_width')?>;height:<?php echo sfConfig::get('app_video_height')?>"
        id="player">
     </a>
     <!-- this will install flowplayer inside previous A- tag. -->
@@ -15,8 +15,8 @@
     <script>
         flowplayer("player", "<?php echo video_path('swf/flowplayer-3.1.5.swf') ?>", {
           clip: {
-            autoPlay: <?php echo sfConfig::get('app_sfvideo_autoplay') ?>,
-            autoBuffering: <?php echo sfConfig::get('app_sfvideo_autoplay') ?>
+            autoPlay: <?php echo sfConfig::get('app_video_autoplay') ?>,
+            autoBuffering: <?php echo sfConfig::get('app_video_autoplay') ?>
           }
         });
     </script>

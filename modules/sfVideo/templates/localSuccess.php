@@ -6,7 +6,9 @@
     <p>View commented source code to get familiar with Flowplayer installation.</p>
 
     <!-- this A tag is where your Flowplayer will be placed. it can be anywhere -->
-    <a href="<?php echo video_path('flv'.'/'.$file) ?>" style="display:block;width:<?php echo sfConfig::get('app_sfvideo_width')?>;height:<?php echo sfConfig::get('app_sfvideo_height')?>" id="player">
+    <a href="<?php echo video_path('flv'.'/'.$file) ?>"
+       style="display:block;width:<?php echo sfConfig::get('app_sfvideo_width')?>;height:<?php echo sfConfig::get('app_sfvideo_height')?>"
+       id="player">
     </a>
     <!-- this will install flowplayer inside previous A- tag. -->
 

@@ -9,7 +9,6 @@
 
 class sfVideoActions extends sfActions
 {
-
   /**
    * Displays example links to external flv files.
    *
@@ -17,6 +16,19 @@ class sfVideoActions extends sfActions
    */
   public function executeIndex(sfWebRequest $request)
   {
+  }
+
+  /**
+   * Demo action. Displays few flowplayers on the same page.
+   *
+   * @param sfRequest $request A request object
+   */
+  public function executeMulti(sfWebRequest $request)
+  {
+    $this->players = array(
+      array('player' => 'cat.flv'),
+      array('player' => 'lemur.flv'),
+    );
   }
 
   /**
@@ -34,5 +46,4 @@ class sfVideoActions extends sfActions
     // adding default flowplayer stylesheet
     $this->getResponse()->addStylesheet('/sfVideoPlugin/css/flowplayer');
   }
-
 }

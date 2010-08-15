@@ -90,7 +90,7 @@ an upload form.
 Configuration
 =============
 
-The file __config/ap.yml__ contains basic flowplayer configuration:
+The file __config/app.yml__ contains basic flowplayer configuration:
 
     width: 520px
     height: 320px

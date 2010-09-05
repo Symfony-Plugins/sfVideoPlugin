@@ -17,8 +17,8 @@ if (!isset($player)) $player = 'player';
     <script>
         flowplayer("<?php echo $player ?>", "<?php echo video_path('swf/flowplayer-3.1.5.swf') ?>", {
           clip: {
-            autoPlay: <?php echo sfConfig::get('app_video_autoplay') ?>,
-            autoBuffering: <?php echo sfConfig::get('app_video_autoplay') ?>
+            autoPlay: <?php echo ($autoplay = sfConfig::get('app_video_autoplay') ? 'true' : 'false') ?>,
+            autoBuffering: <?php echo ($autobuffering = sfConfig::get('app_video_autobuffering') ? 'true' : 'false') ?>
           }
         });
     </script>
